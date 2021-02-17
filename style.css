@@ -1,0 +1,414 @@
+/* Scroll bar style */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff0080;
+}
+
+body {
+  font: 16px/1.3 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f9f9;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Navbar Section */
+header {
+  background: #121013;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: 3px solid #ff0080;
+  position: fixed;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 40px;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 10px 0 10px;
+  font-size: 13px;
+}
+
+header #brand {
+  float: left;
+  font-family: "Dancing Script", cursive;
+}
+
+header #brand h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+  color: #ff0080;
+}
+
+header a:hover {
+  color: #ff0080;
+}
+/* End Navbar Section */
+
+/* Main Section */
+#main {
+  min-height: 800px;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./img/background.jpg) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+}
+
+#main .main-heading {
+  margin-top: 300px;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.heading {
+  font-weight: 900;
+  font-size: 70px;
+}
+
+#main p {
+  font-size: 22px;
+}
+/* End Main Section */
+
+/* Newsletter section */
+#newsletter {
+  padding: 16px;
+  color: #ffffff;
+  background: #ff0080;
+}
+
+#newsletter h1 {
+  float: left;
+}
+
+#newsletter form {
+  float: right;
+  margin-top: 16px;
+}
+
+#newsletter input[type="email"] {
+  padding: 4px;
+  height: 26px;
+  width: 240px;
+  outline: none;
+}
+
+.button_1 {
+  height: 34px;
+  background: #0f1123;
+  border: none;
+  padding: 0 20px 0 20px;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
+
+.button_1:hover {
+  background: #fa1616;
+}
+/* End Newsletter section */
+
+/* Content Section */
+#content {
+  margin-top: 40px;
+}
+
+#content .content-heading {
+  text-align: center;
+  font-size: 40px;
+}
+
+hr {
+  width: 20%;
+}
+
+.content-text {
+  text-align: center;
+}
+
+#content .content-info {
+  float: left;
+  text-align: center;
+  width: 22%;
+  padding: 12px;
+  margin-top: 40px;
+}
+
+#content .content-info img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+h3 {
+  font-size: 18px;
+}
+/* End Content Section */
+
+/* Footer Section */
+footer {
+  background: #222831;
+  color: #ffffff;
+}
+
+#footer {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+#footer .footer-info {
+  padding: 0 14px;
+}
+
+.footer-info h2 {
+  margin-bottom: 20px;
+}
+
+.about,
+.contact {
+  width: 40%;
+}
+
+.link {
+  width: 20%;
+}
+
+.social-media {
+  margin-top: 30px;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.4s;
+  color: #ffffff;
+}
+
+.social-media ul {
+  display: flex;
+}
+
+.social-media ul li a {
+  display: inline-block;
+  margin-right: 10px;
+  width: 60px;
+  height: 40px;
+  padding-top: 10px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  text-align: center;
+}
+
+.social-media ul li a:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.fa {
+  font-size: 30px;
+}
+
+.link ul li a {
+  display: inline-block;
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+
+.link ul li a:hover {
+  color: #ff0080;
+}
+
+.footer-info form .text-input {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.footer-info form .msg {
+  margin-top: 10px;
+}
+
+.footer-info form input,
+.footer-info form textarea {
+  width: 60%;
+  font-size: 20px;
+  padding-left: 4px;
+  outline: none;
+}
+
+.footer-info form input {
+  height: 34px;
+}
+
+.footer-info .btn {
+  margin-top: 14px;
+}
+
+.footer-info .button_2 button {
+  height: 30px;
+  width: 20%;
+  border: none;
+  outline: none;
+  background: #0f1123;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-info .button_2 button:hover {
+  background: #fa1616;
+}
+
+.copyright {
+  padding: 14px;
+  text-align: center;
+  background-color: #121013;
+}
+/* End Footer Section */
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  header #brand,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #content .content-info {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header {
+    padding-bottom: 10px;
+  }
+
+  #main .main-heading {
+    font-size: 40px;
+  }
+
+  #main .heading {
+    font-size: 47px;
+  }
+
+  #main p {
+    font-size: 16px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  #newsletter button {
+    display: block;
+    width: 100%;
+  }
+
+  #newsletter h1 {
+    font-size: 22px;
+  }
+
+  #newsletter form input[type="email"] {
+    width: 100%;
+    margin-bottom: 7px;
+  }
+
+  #content .content-heading {
+    font-size: 28px;
+  }
+
+  #content p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about,
+  .contact {
+    width: 35%;
+  }
+
+  .link {
+    width: 30%;
+  }
+}
+
+@media (max-width: 767px) {
+  .about,
+  .contact,
+  .link {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  #footer {
+    flex-direction: column;
+  }
+
+  .footer-info form input,
+  .footer-info form textarea {
+    width: 70%;
+    font-size: 20px;
+    padding-left: 4px;
+  }
+}
+
+@media (max-width: 479px) {
+  nav ul li a {
+    font-size: 11px;
+  }
+
+  #main .main-heading {
+    font-size: 1.7rem;
+  }
+
+  #main .heading {
+    font-size: 2rem;
+  }
+
+  #content p {
+    font-size: 20px;
+  }
+}
+/* End Media Queries for Mobile */
